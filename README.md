@@ -1,4 +1,4 @@
 # Category Theory - Fall 2023
-* _Institution_: McGill University
-* _Instructor_: Tasmin Chu
-* _Webpage_: https://publish.obsidian.md/tasmin-chu/cat-theory
+Solutions to selected problems curated by [Tasmin Chu](https://publish.obsidian.md/tasmin-chu/cat-theory) for a mini-course in Category Theory, mostly following Emily Riehl’s _Category Theory in Context_.
+
+## Contributing
