@@ -1,7 +1,7 @@
 ---
 name: Fix a mistake
 about: Found a mistake in a solution?
-title: "[error]"
+title: "[mistake] "
 labels: bug
 assignees: zhaoshenzhai
 
