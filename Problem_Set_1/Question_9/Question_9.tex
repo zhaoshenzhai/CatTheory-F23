@@ -1,0 +1,27 @@
+\documentclass{article}
+\input{preamble.sty}
+\input{macros.sty}
+
+\begin{document}
+    \begin{center}
+        \large{Problem Set 1 | Question 9 (\href{https://github.com/zhaoshenzhai/CatTheory-F23/blob/master/Problem_Set_1/Questions.pdf}{Github})}\\\ \\
+        \normalsize{Zhaoshen Zhai | \today}
+    \end{center}
+
+    \begin{exercise}
+        We say that a morphism $s:x\to y$ is a \textbf{split monomorphism} if there exists some $r:y\to x$ such that $rs=1_x$.
+        \begin{itemize}
+            \item[(a)] Prove that a morphism that is both a monomorphism and a split epimorphism is necessarily an isomorphism.
+            \item[(b)] Argue by duality that a split monomorphism that is an epimorphism is also an isomorphism.
+        \end{itemize}
+    \end{exercise}
+    \begin{solution}
+        A \textit{split epimorphism} is defined dually as a morphism $r:y\to x$ such that $rs=1_x$ for some $s:x\to y$. Assuming that our category $C$ is locally-small, we prove (a).
+        
+        Let $f:x\to y$ be a monomorphism, which is equivalent to requiring that for every $w\in C$, the post-composition $f_\ast:C\l(w,x\r)\to C\l(w,y\r)$ is an injection. We claim that $f$ is a split epimorphism iff for every $w\in C$, (the same) $f_\ast$ is a surjection. Thus $f_\ast$ is a bijection (of sets), so $f$ is an isomorphism as desired.
+        \begin{itemize}
+            \item Indeed, suppose that $f$ is a split epimorphism and fix $w\in C$. Let $s:y\to x$ be such that $fs=1_y$. For any $g:w\to y$, let $h\coloneqq sg:w\to x$ and observe that $fh=f\l(sg\r)=\l(fs\r)g=1_yg=g$. Conversely, let $w\coloneqq y$ and consider $1_y:y\to y$. That $f_\ast$ is a surjection furnishes some $s:y\to x$ such that $fs=1_y$, as desired.
+        \end{itemize}
+        This proves (a). For (b), we apply (a) to the opposite category $C^\textrm{op}$. More precisely, let $f:x\to y$ be an epimorphism that is also a split monomorphism. Then $f^\textrm{op}:y\to x$ is a monomorphism that is also a split epimorphism, so $f^\textrm{op}$ is an isomorphism in $C^\textrm{op}$ by (a). This occurs iff $f:x\to y$ is an isomorphism in $C$, as desired.\qed
+    \end{solution}
+\end{document}
