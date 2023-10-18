@@ -28,6 +28,12 @@
         \begin{itemize}
             \item Indeed, suppose that $f$ is a split epimorphism and fix $w\in C$. Let $s:y\to x$ be such that $fs=1_y$. For any $g:w\to y$, let $h\coloneqq sg:w\to x$ and observe that $fh=f\l(sg\r)=\l(fs\r)g=1_yg=g$. Conversely, let $w\coloneqq y$ and consider $1_y:y\to y$. That $f_\ast$ is a surjection furnishes some $s:y\to x$ such that $fs=1_y$, as desired.
         \end{itemize}
+        \begin{equation*}
+            \begin{tikzcd}
+                & w \ar[dr, "g"] \ar[d, "\ex h"', dashed] & \\
+                y \ar[r, "s"] \ar[rr, "1_y"', bend right=25] & x \ar[r, "f"] & y
+            \end{tikzcd}
+        \end{equation*}
         This proves (a). For (b), we apply (a) to the opposite category $C^\textrm{op}$. More precisely, let $f:x\to y$ be an epimorphism that is also a split monomorphism. Then $f^\textrm{op}:y\to x$ is a monomorphism that is also a split epimorphism, so $f^\textrm{op}$ is an isomorphism in $C^\textrm{op}$ by (a). This occurs iff $f:x\to y$ is an isomorphism in $C$, as desired.\qed
     \end{solution}
 \end{document}
