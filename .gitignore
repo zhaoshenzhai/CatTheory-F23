@@ -11,3 +11,5 @@
 *.run.xml
 *.nav
 *.snm
+
+Template/*.pdf
